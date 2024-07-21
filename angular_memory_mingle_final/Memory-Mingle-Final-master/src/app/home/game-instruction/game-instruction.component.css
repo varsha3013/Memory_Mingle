@@ -1,0 +1,54 @@
+.Heading h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  letter-spacing: 1rem;
+  font-weight: bolder;
+}
+body
+{
+  background-color: #bde0fe;
+  height: 100vh;
+
+}
+.Heading
+{
+
+}
+.lvls{
+  width: 160px;
+}
+
+.Heading span {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+.content
+{
+  color: #6f2dbd;
+}
+.game-instructions
+{
+  padding: 1rem;
+  background-color: #baebff;
+  border-radius: 2.6rem;
+  border: 2px solid #6f2dbd;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  
+}
+
+.content
+{
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}

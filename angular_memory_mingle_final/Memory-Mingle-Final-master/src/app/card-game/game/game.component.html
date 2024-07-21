@@ -1,0 +1,30 @@
+<body>
+    <section class="flex-container " >
+        <div class="game" >
+            <div class="container-fluid" style="width: 100%;">
+                <button type="button" class="quit-btn" (click)="onQuitClick()">QUIT</button>
+                <div class="scorecard d-flex" >
+                    <div class="col ">
+                        <h1>Scorecard</h1>
+                        <h3>Moves: {{movesForlevel}}</h3>
+                        <h3> Pairs left: {{pairLeft}}</h3>
+                    </div>
+                </div>
+                <h1 class="title pt-3 mb-5 fw-bold" >Card Matching Game</h1>
+                <div class="centre-box" style="width: 100%;">
+                    <div class="tile" *ngFor="let card of selectedObjects3" (click)="onCardClick(card)" [ngClass]="{'selected': card.number === selectedCard}"  style="width: 100%;">
+                        <button [disabled]="card.isSelected" style="margin: -0.2rem;">
+                            <img *ngIf="card.isSelected"  class="card-image" [src]=getUrl(card.number) alt="Card Image" >
+                        </button>
+                        <div *ngIf="!card.isSelected" class="color-display" style="width: 100%;">
+                            <img src="../../../assets/question.jpg" alt="" style="width: 100%;" >
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+      
+        </div>
+    </section>
+</body>
